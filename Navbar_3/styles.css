@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); /*importing a font*/
+
+*{
+    box-sizing: border-box;
+    margin: 0; /* setting margin and padding to 0 reset's the page's default margin/padding for the entire html file*/
+    padding: 0;
+    background-color: #2c2c2c;
+}
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end; /* adds space between elements in header */
+    align-items: center; /* aligns all the items in the header */
+    padding: 30px 10%;
+}
+
+.logo {
+    cursor: pointer; /*making cursor point on logo hover */
+    order:3; /*logo comes last*/
+    margin-left: auto; /* push logo to right */
+}
+
+.logo:hover {
+    color: white;
+    transform: rotate(360deg);
+    transition: all 2s ease 0s;
+}
+
+.nav__links{
+    list-style: none; /*removing the bulletin from the nav link */
+}
+
+.nav__links li {
+    display: inline-block; /*style for navigation links [side by side] */
+    padding: 0px 20px;  /*space between navigation links [0px - top bottom 20px - left right] */
+}
+
+.nav__links li:nth-child(1) {
+    padding: 0 20px 0 0;
+}/* targets the first element and reduces padding from left 
+side of the page then aligns other nav elements with equal spacing */
+
+
+.nav__links li a:hover{
+    color: #0088a9;
+    transition: all 0.3s ease 0s; /*ease 0 to make it smooth */
+}
+
+nav{
+    order:1; /*navigation bar comes first*/
+}
+
+.cont{
+    order:2; /*contact us button comes second*/
+}
+
+button{
+    margin-left:20px;
+    padding: 9px 20px;
+    background-color: rgb(30, 33, 34);
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-left: 30px; /*pushes button to the right*/
+}
+
+button:hover {
+    background-color: rgba(105, 105, 105, 0.8); /*change level of alpha (opacity) */
+}
+
+
