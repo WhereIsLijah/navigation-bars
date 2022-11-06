@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap'); /*importing a font*/
+
+*{
+    box-sizing: border-box;
+    margin: 0; /* setting margin and padding to 0 reset's the page's default margin/padding for the entire html file*/
+    padding: 0;
+    background-color: #24252A;
+}
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header{
+display: flex;
+justify-content: space-between; /* adds space between elements in header */
+align-items: center; /* aligns all the items in the header */
+padding: 30px 10%;
+}
+
+.logo {
+cursor: pointer; /*making cursor point on logo hover */
+}
+
+.nav__links{
+ list-style: none; /*removing the bulletin from the nav link */
+}
+
+.nav__links li {
+   display: inline-block; /*style for navigation links [side by side] */
+   padding: 0px 20px;  /*space between navigation links [0px - top bottom 20px - left right] */
+    }
+
+
+.nav__links li a:hover{
+        color: #0088a9;
+        transition: all 0.3s ease 0s; /*ease 0 to make it smooth */
+}
+
+button{
+    padding: 9px 20px;
+    background-color: rgba(0, 136,168,1);
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136,168,0.8); /*change level of alpha (opacity) */
+    color:#b1b1b1; 
+}
